@@ -4,8 +4,8 @@ This method incorporates with, segmentation and morphological operations which a
 
 Executing the code
 
-Open the Code in matlab
-Change the directory for each input image
-Example for image 5 I=imread('C:\Users\Manjunatha\Desktop\5.jpg');
+1. Open the Code in matlab
+2. Change the directory for each input image
+    Example for image 5 I=imread('C:\Users\Manjunatha\Desktop\5.jpg');
 
-Run the code
+3. Run the code
