@@ -1,9 +1,9 @@
-I=imread('C:\Users\Naren Adithya\Desktop\5.jpg');
+I=imread('C:\Users\manjunatha\Desktop\5.jpg');
 figure, imshow(I); title('Brain MRI Image');
 I = imresize(I,[200,200]);
 I= rgb2gray(I);
 I= im2bw(I,.6);%binarising with thresold .6
-figure, imshow(I);title('Thresholded Image');
+figure, imshow(I);title('Threshold Image');
 hy = fspecial('sobel');
 hx = hy';
 Iy = imfilter(double(I), hy, 'replicate');
@@ -29,4 +29,4 @@ fgm4 = bwareaopen(fgm3, 20);
 I3 = I;
 bw = im2bw(Iobrcbr);
 figure
-imshow(bw), title('only tumor')
+imshow(bw), title('Tumor part')
